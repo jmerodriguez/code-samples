@@ -1,0 +1,13 @@
+name: ACS-interactive
+title: ACS-interactive
+username:
+account: jmerodriguez
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3913679
+bundleId: 4434765
+url: https://jmerodriguez.shinyapps.io/ACS-interactive/
+when: 1617655552.10283
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: tidycensus data wrangling.R

@@ -1,14 +1,8 @@
 #SENTIMENT ANALYSIS FOR GLOBAL ECONOMIC DATA
-#This file parses quarterly reports from the Bank of International Settlements (BIS),
-#a financial institution in Switzerland that produces research and reports focusing
-#on central banks and the global economy.
-#The file does web scraping to download the reports from the internet, so
-#no previous data download is needed.
-#Note that the file is written in a way such that you can increase the number
-#of analyzed reports for year-comparison purposes.
 
-#install.packages(tidytext)
-#install.packages(rvest)
+
+#install.packages("tidytext")
+#install.packages("rvest")
 library(tidyverse)
 library(tidytext)
 library(rvest)

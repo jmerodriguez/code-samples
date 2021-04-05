@@ -1,10 +1,6 @@
-#The idea for this app was taken from https://shiny.rstudio.com/gallery/superzip-example.html
-#However, code is my own.
-#This app uses data from the United States Census Bureau to map some
-#US states' socioeconomic variables and their relation to States'
-#Medicaid affiliation rates.
-#This app is a modified version of my final project for the course Data & Programming II
-#(Prof. Jeffrey Levy) at the Harris School of Public Policy.
+#You can see the resulting shiny app here:
+# https://jmerodriguez.shinyapps.io/ACS-interactive/
+
 
 #install.packages("leaflet")
 #install.packages("tmap")
@@ -17,7 +13,7 @@ library(sf)
 library(tidyverse)
 library(tmap)
 
-df <- st_read("project_data.shp") %>%
+df <- st_read("census_data.shp") %>%
   rename("Median household size" = "hs_size",
          "% of households with children under 18" = "under18",
          "% of households with adults over 60" = "over60",
@@ -25,9 +21,11 @@ df <- st_read("project_data.shp") %>%
          "% of residents with high school degree or higher" = "HSch",
          "% of residents with bachelor degree or higher" = "BachDeg",
          "Median household income" = "med_inc",
-         "Unemployment Rate" = "unempl") %>%
+         "Unemployment Rate" = "unempl")
+
+df_mod <- df %>%
   st_drop_geometry() %>%
-  select(-NAME, -state_code, -gov_party, -year, -GEOID, -medic) 
+  select(-NAME, -year, -GEOID, -medic) 
 
 
 ui <- fluidPage(
@@ -77,14 +75,14 @@ server <- function(input, output) {
      df %>%
        st_drop_geometry() %>%
        filter(year == input$year) %>%
-       select(input$var, medic, gov_party)
+       select(input$var, medic)
   })
   
    data2 <- reactive({
      
      df %>%
        filter(year == input$year) %>%
-       select(input$var, state_code)
+       select(input$var)
    })
    
 
@@ -110,8 +108,10 @@ server <- function(input, output) {
   
  output$histog <- renderPlot({
    ggplot(data1()) +
-     geom_histogram(aes(x = data1()[, input$var], fill = gov_party),
-                    position = "dodge") +
+     geom_histogram(aes(x = data1()[, input$var]),
+                    position = "dodge",
+                    color = "darkslategray4",
+                    fill  = "darkslategray3") +
      labs(title    = "Histogram for Selected Variable",
           subtitle = input$year,
           x = input$var) +
@@ -126,7 +126,9 @@ server <- function(input, output) {
           
 output$corr_med <- renderPlot({
   ggplot(data1()) +
-    geom_point(aes(x = data1()[, input$var], y = medic, color = gov_party)) +
+    geom_point(aes(x = data1()[, input$var], y = medic),
+               color = "darkslategray4",
+               fill  = "darkslategray3") +
     geom_smooth(aes(x = data1()[, input$var], y = medic), method = lm, color = "black") +
     labs(title = "Linear Fit",
          x = input$var,
@@ -141,4 +143,3 @@ output$corr_med <- renderPlot({
 }
 
 shinyApp(ui = ui, server = server)
-#https://jmerodriguez.shinyapps.io/final-project-ACS/

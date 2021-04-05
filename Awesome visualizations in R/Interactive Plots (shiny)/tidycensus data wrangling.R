@@ -95,7 +95,8 @@ full_df <- acs_data %>%
   st_as_sf(crs = 4326)
 
 
-#Run only if you want to download the data table in your computer
+#Run only if you want to download the data table in your computer, but you do not need it
+#for seeing my shinyapp online.
 #install.packages("here")
 #library(here)
 # path <- "" #directory in which you want to save the file
