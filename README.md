@@ -4,7 +4,7 @@ Welcome to my GitHub code samples' page.
 
 Here, you will see an extract of what I can do in R (Python and Stata to come)
 
-All the necessary files that you need for running the R scripts and Rmd files are included in this Repo, so no further action is needed from you.
+All the necessary files that you need for running the R scripts are included in this Repo, so no further action is needed from you.
 
 What you will find in the code samples:
 
