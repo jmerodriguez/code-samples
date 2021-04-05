@@ -8,9 +8,9 @@ All the necessary files that you need for running the R scripts and Rmd files ar
 
 What you will find in the code samples:
 
-**R sample folder.** You will get a small taste of my web scraping and sentiment analysis skills. This file parses quarterly reports from the Bank of International Settlements (BIS), a financial institution in Switzerland that produces research and reports focusing on central banks and the global economy.
+**R sample folder.** You will get a small taste of my **web scraping and sentiment analysis** skills. This file parses quarterly reports from the Bank of International Settlements (BIS), a financial institution in Switzerland that produces research and reports focusing on central banks and the global economy.
 
-**Awesome visualizations in R.** Sophisticated static and interactive plots (Shiny).
+**Awesome visualizations in R.** Sophisticated **static and interactive plots (Shiny)**.
 The app uses data from the US Census Bureau to map US states' socioeconomic variables and their relation to Medicaid affiliation rates. The app is a modified version of my final project for the course Data & Programming II (Prof. Jeffrey Levy) at the Harris School of Public Policy.
 
 
