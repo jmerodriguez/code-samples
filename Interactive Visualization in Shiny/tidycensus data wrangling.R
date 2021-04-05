@@ -8,7 +8,7 @@ library(tidyverse)
 library(sf)
 library(spData)
 library(glue)
-census_api_key("294056f8026e13298e326dabe95389cb23dd2fad")
+census_api_key("YOUR KEY HERE") #please get a Census API Key at http://api.census.gov/data/key_signup.html
 census_key <- Sys.getenv("CENSUS_API_KEY")
 
 
