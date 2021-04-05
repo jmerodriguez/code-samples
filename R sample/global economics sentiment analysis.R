@@ -1,6 +1,5 @@
 #SENTIMENT ANALYSIS FOR GLOBAL ECONOMIC DATA
 
-
 #install.packages("tidytext")
 #install.packages("rvest")
 library(tidyverse)
