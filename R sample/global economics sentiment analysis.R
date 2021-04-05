@@ -103,7 +103,6 @@ sentiments_plot <- function(x) {
 
 
 #OUTPUT
-
 #Summary table
 print(table)
 
