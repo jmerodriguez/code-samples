@@ -1,0 +1,13 @@
+country,msa,year,month,Employment
+USA,"New York-Newark-Jersey City, NY-NJ-PA",2007,12,9258444
+USA,"Chicago-Naperville-Elgin, IL-IN-WI",2007,12,4671227
+USA,"Washington-Arlington-Alexandria, DC-VA-MD-WV",2007,12,2895124
+USA,"Los Angeles-Long Beach-Anaheim, CA",2007,12,6151517
+USA,"Detroit-Warren-Dearborn, MI",2007,12,1974378
+USA,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",2007,12,2847416
+USA,"Houston-The Woodlands-Sugar Land, TX",2007,12,2611394
+USA,"Atlanta-Sandy Springs-Roswell, GA",2007,12,2638680
+USA,"Seattle-Tacoma-Bellevue, WA",2007,12,1773786
+,,,,
+Source:,BLS,Local Area Unemployment Statistics,,
+,Seasonally adjusted,,,

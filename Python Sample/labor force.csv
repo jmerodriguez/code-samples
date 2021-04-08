@@ -1,0 +1,13 @@
+country,msa,year,month,Labor Force
+USA,"New York-Newark-Jersey City, NY-NJ-PA",2007,12,9705271
+USA,"Chicago-Naperville-Elgin, IL-IN-WI",2007,12,4932224
+USA,"Washington-Arlington-Alexandria, DC-VA-MD-WV",2007,12,2984752
+USA,"Los Angeles-Long Beach-Anaheim, CA",2007,12,6501370
+USA,"Detroit-Warren-Dearborn, MI",2007,12,2131091
+USA,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",2007,12,2982882
+USA,"Houston-The Woodlands-Sugar Land, TX",2007,12,22733348
+USA,"Atlanta-Sandy Springs-Roswell, GA",2007,12,2775463
+USA,"Boston-Cambridge-Nashua, MA-NH",2007,12,2487598
+,,,,
+Source:,BLS,Local Area Unemployment Statistics,,
+,Seasonally adjusted,,,
