@@ -20,7 +20,7 @@ employment = employment[employment['Employment'].notnull()]
 labor_force = labor_force[labor_force['Labor Force'].notnull()]
 
 """
-We use inner join to merge the dfs because only the countries that have employment and labor force data,
+We use inner join to merge the dfs because only the MSAa that have employment and labor force data,
 are useful to calculate unemployment rates (avoiding NAs).
 """
 empl_lf = employment.merge(labor_force, how = 'inner',
