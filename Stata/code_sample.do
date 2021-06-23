@@ -2,7 +2,7 @@
 
 *Plot average school enrollment by Region - By Gender and Level
 clear all 
-use "school_enrollment_WB.dta"
+import delimited "World Dev Indicators (World Bank).csv", varnames(1)
 
 drop yr2001-yr2009 yr2018-yr2020
 destring yr2010-yr2017, force replace
