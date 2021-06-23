@@ -46,5 +46,23 @@ collapse (mean) yrprimary_FE-yrtertiary_MA, by(WBregion year)
 averages for different year might be considering different countries
 because of data issues*/
 
-*Graph the trends
+*Graph Trends
+encode WBregion, g(WBregion1)
+xtset WBregion1 year
 
+xtline yrprimary_FE, overlay ylabel(60(10)95) xlabel(2010(1)2017) ///
+          graphregion(color(white)) ///
+		  ytitle("Mean by Region") title("% Female Primary School Enrollment (2010-2017)")
+
+graph export "female primary sch enrollment.png", as(png) replace
+
+
+*If desired to plot all variables, run the following code
+/*
+foreach var of varlist yrprimary_FE-yrtertiary_MA {
+
+xtline `var', overlay ylabel(60(10)95, labsize(small)) ///
+     graphregion(color(white)) xlabel(2010(1)2017)
+
+}
+*/
