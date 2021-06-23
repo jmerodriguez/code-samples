@@ -2,7 +2,7 @@
 
 Welcome to my GitHub code samples' page.
 
-Here, you will see an extract of what I can do in R and Python (Stata to come).
+Here, you will see an extract of what I can do in R, Python, and Stata.
 
 All the necessary files that you need for running the R scripts are included in this Repo, so no further action is needed from you.
 
@@ -15,5 +15,6 @@ The app uses data from the American Community Survey (US Census Bureau) to map U
 
 **Python sample folder.** Short code showing my Pandas skills. The code uses a subsample of Metropolitan Statistical Areas (MSA) to calculate and analyze unemployment rates around the World.
 
+**Stata sample folder.** You will find a do-file in which I plot female primary school enrollment percentage by World Bank Region between 2010 and 2017. You will see here that I can, among other things, code loops, merge datasets and, of course, plot!
 
 Enjoy!
